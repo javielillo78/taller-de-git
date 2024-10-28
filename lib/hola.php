@@ -1,4 +1,10 @@
-// Autor: Javier Reyes <javireyescarmona24@gmail.com>
-print "Introduce tu nombre:";
+<?php
+//Autor: Javier Reyes <javireyescarmona24@gmail.com>
+
+require('HolaMundo.php');
+
+print "Introduce tu nombre: ";
 $nombre = trim(fgets(STDIN));
-@print "Hola, {$nombre}\n"
+print new HolaMundo($nombre);;
+
+?>
